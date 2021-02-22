@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CrocoAssistant</class>
+ <widget class="QMainWindow" name="CrocoAssistant">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>814</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Croco-Assistant</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_maintenance">
+       <attribute name="title">
+        <string>Maintenance</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_31">
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>MISC</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>APPLY NEW CONFIGS/RESTORE DEFAULTS CONFIGS (this might overwrite your customizations)</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="scrollArea_3">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>766</width>
+             <height>420</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_system">
+              <property name="title">
+               <string>System</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="1" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="pushButton_reinstall">
+                 <property name="text">
+                  <string>Reinstall all packages</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="download"/>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="pushButton_clrlogs">
+                 <property name="text">
+                  <string>Clear logs</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="journal">
+                   <normaloff>.</normaloff>.</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="pushButton_reflector">
+                 <property name="text">
+                  <string>Refresh mirrorlist (Reflector-Simple)</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="reload">
+                   <normaloff>.</normaloff>.</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="pushButton_sysup">
+                 <property name="text">
+                  <string>System update (pacman -Syu)</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="system-upgrade">
+                   <normaloff>.</normaloff>.</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="pushButton_clrcache">
+                 <property name="text">
+                  <string>Clear package cache</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="trash-empty"/>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="pushButton_dblck">
+                 <property name="text">
+                  <string>Remove database lock</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="remove">
+                   <normaloff>.</normaloff>.</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="pushButton_orphans">
+                 <property name="text">
+                  <string>Remove orphans</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="delete"/>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="pushButton_editrepo">
+                 <property name="text">
+                  <string>Edit repositories</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="pace"/>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_system">
+       <attribute name="title">
+        <string>System Components</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_49">
+        <item row="0" column="0" colspan="2">
+         <widget class="QScrollArea" name="scrollArea_2">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>766</width>
+             <height>719</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="5" column="0">
+             <widget class="QGroupBox" name="groupBox_printer">
+              <property name="title">
+               <string>Printing and Scanning</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_50">
+               <item row="3" column="0">
+                <widget class="QCheckBox" name="checkBox_cupsgrp">
+                 <property name="text">
+                  <string>User in cups group</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QCheckBox" name="checkBox_cups">
+                 <property name="text">
+                  <string>cups.socket</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QCheckBox" name="checkBox_saned">
+                 <property name="text">
+                  <string>saned.socket</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QCheckBox" name="checkBox_usbipp">
+                 <property name="text">
+                  <string>ipp-usb.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_printer">
+                 <property name="text">
+                  <string>Printing support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="checkBox_scanning">
+                 <property name="text">
+                  <string>Scanning support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QCheckBox" name="checkBox_sysgrp">
+                 <property name="text">
+                  <string>User in sys group</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QCheckBox" name="checkBox_scannergrp">
+                 <property name="text">
+                  <string>User in scanner group</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="title">
+               <string>Connman</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_13">
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="checkBox_connmanservice">
+                 <property name="text">
+                  <string>connman.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_connman">
+                 <property name="text">
+                  <string>Connman support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_ofono">
+                 <property name="text">
+                  <string>ofono.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="checkBox_neard">
+                 <property name="text">
+                  <string>neard.service</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="title">
+               <string>NetworkManager</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_network">
+                 <property name="text">
+                  <string>NetworkManager support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="checkBox_networkservice">
+                 <property name="text">
+                  <string>NetworkManager.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_modemmanager">
+                 <property name="text">
+                  <string>ModemManager.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="checkBox_gpsd">
+                 <property name="text">
+                  <string>gpsd.service</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_audio">
+              <property name="title">
+               <string>Audio</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="checkBox_jack">
+                 <property name="text">
+                  <string>JACK support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_pulseaudio">
+                 <property name="text">
+                  <string>Pulseaudo support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_alsa">
+                 <property name="text">
+                  <string>ALSA support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QCheckBox" name="checkBox_pipewire">
+                 <property name="text">
+                  <string>Pipewire support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="checkBox_realtime">
+                 <property name="text">
+                  <string>User in realtime group</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QGroupBox" name="groupBox_virtualization">
+              <property name="title">
+               <string>Virtualization</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="checkBox_vboxusers">
+                 <property name="text">
+                  <string>User in vboxusers group</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="checkBox_virtualbox">
+                 <property name="text">
+                  <string>Virtualbox</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_libvirtd">
+                 <property name="text">
+                  <string>libvirtd.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_virtmanager">
+                 <property name="text">
+                  <string>Virt-manager</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QCheckBox" name="checkBox_libvirtgrp">
+                 <property name="text">
+                  <string>User in libvirt group</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QGroupBox" name="groupBox_bluetooth">
+              <property name="title">
+               <string>Bluetooth</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="5" column="1">
+                <widget class="QCheckBox" name="checkBox_bluetoothauto">
+                 <property name="text">
+                  <string>bluetooth-autoconnect.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1" colspan="2">
+                <widget class="QCheckBox" name="checkBox_pulsebluetoothauto">
+                 <property name="text">
+                  <string>pulseaudio-bluetooth-autoconnect.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="checkBox_bluetooth">
+                 <property name="text">
+                  <string>Bluetooth support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="checkBox_bluetoothservice">
+                 <property name="text">
+                  <string>bluetooth.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QCheckBox" name="checkBox_lp">
+                 <property name="text">
+                  <string>User in lp group</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QGroupBox" name="groupBox_samba">
+              <property name="title">
+               <string>Samba</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_51">
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_samba">
+                 <property name="text">
+                  <string>Samba support</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QCheckBox" name="checkBox_nmb">
+                 <property name="text">
+                  <string>NMB service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QCheckBox" name="checkBox_sambashare">
+                 <property name="text">
+                  <string>User in sambashare group</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="checkBox_smb">
+                 <property name="text">
+                  <string>SMB service</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QGroupBox" name="groupBox_inputmethod">
+              <property name="title">
+               <string>Input method</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_53">
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_fcitx">
+                 <property name="text">
+                  <string>Fcitx</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_ibus">
+                 <property name="text">
+                  <string>Ibus</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="checkBox_fcitx5">
+                 <property name="text">
+                  <string>Fcitx5</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="checkBox_asian">
+                 <property name="text">
+                  <string>Asian fonts</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QGroupBox" name="groupBox_firewall">
+              <property name="title">
+               <string>Firewall</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_29">
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="checkBox_ufwservice">
+                 <property name="text">
+                  <string>ufw.service</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_ufw">
+                 <property name="text">
+                  <string>UFW</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_firewalld">
+                 <property name="text">
+                  <string>Firewalld</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="checkBox_firewalldservice">
+                 <property name="text">
+                  <string>firewalld.service</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox_video">
+              <property name="title">
+               <string>Video</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_11">
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_gstreamer">
+                 <property name="text">
+                  <string>Gstreamer Codecs</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_video">
+                 <property name="text">
+                  <string>User in video group</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_btrfs">
+       <attribute name="title">
+        <string>Btrfs</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_33">
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="scrollArea_4">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>766</width>
+             <height>495</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_services">
+              <property name="title">
+               <string>Services</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_36">
+               <item row="0" column="1" alignment="Qt::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_Scrub">
+                 <property name="text">
+                  <string>Scrub</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0" alignment="Qt::AlignHCenter">
+                <widget class="QCheckBox" name="checkBoxFstrim">
+                 <property name="text">
+                  <string>Fstrim</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QGroupBox" name="groupBox_btools">
+              <property name="title">
+               <string>Tools</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_35">
+               <item row="2" column="0">
+                <widget class="QPushButton" name="pushButton_balance">
+                 <property name="text">
+                  <string>Start Balance</string>
+                 </property>
+                 <property name="flat">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="balance">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;  Balancing takes a very long time to complete - do not close the window before the process completes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QGroupBox" name="groupBox_diskspace">
+              <property name="title">
+               <string>Disk Space</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_34">
+               <item row="2" column="0">
+                <widget class="QTextEdit" name="textEdit"/>
+               </item>
+               <item row="1" column="0" alignment="Qt::AlignRight">
+                <widget class="QToolButton" name="toolButton_diskRefresh">
+                 <property name="text">
+                  <string>Refresh</string>
+                 </property>
+                 <property name="icon">
+                  <iconset theme="view-refresh">
+                   <normaloff>../../../run/media/sk/data/Croco/Applications/croco-welcome</normaloff>../../../run/media/sk/data/Croco/Applications/croco-welcome</iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextBesideIcon</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_settings">
+       <attribute name="title">
+        <string>Settings</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_14">
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>766</width>
+             <height>495</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_15">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_adguard">
+              <property name="title">
+               <string>Dns</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QCheckBox" name="checkBox_adguard">
+                 <property name="text">
+                  <string>Enable AdGuard DNS</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QGroupBox" name="groupBox_guest">
+              <property name="title">
+               <string>Guest user</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_61">
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_guest">
+                 <property name="text">
+                  <string>Guest user support</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_performancetweaks">
+              <property name="title">
+               <string>Performance Tweaks</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_18">
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_performancetweaks">
+                 <property name="text">
+                  <string>Enable Performance-Tweaks</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox_hblock">
+              <property name="title">
+               <string>hblock</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_16">
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_hblock">
+                 <property name="toolTip">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;An adblocker that creates a hosts file from automatically downloaded sources&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="text">
+                  <string>hblock</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QGroupBox" name="groupBox_evdevrce">
+              <property name="title">
+               <string>Right click emulation</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_60">
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox_lptrce">
+                 <property name="text">
+                  <string>Long press to right click emulation</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="checkBox_evdevrce">
+                 <property name="text">
+                  <string>evdev-rce.service</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QGroupBox" name="groupBox_gdm">
+              <property name="title">
+               <string>GDM Wayland (GNOME only)</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QCheckBox" name="checkBox_gdm">
+                 <property name="text">
+                  <string>Enable GDM Wayland</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

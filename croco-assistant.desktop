@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Croco Assistant
+Name[de]=Croco Assistant
+Comment=Change system settings
+Comment[de]=Systemeinstellungen einfach verändern
+Exec=croco-assistant
+Terminal=false
+Type=Application
+Icon=croco-assistant
+Categories=GNOME;GTK;System;Croco-Setup;
+NoDisplay=false
+
